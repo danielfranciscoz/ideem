@@ -1,3 +1,58 @@
+
+
+.icon-bar {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  width: 40px;
+  transition: all 0.3s;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  width: 100px;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.instagram {
+  background: #e91e63;
+  color: white;
+}
+
+@media (max-width: 540px), (max-width: 720px), (max-width: 960px){
+.icon-bar{
+  display: none;
+}
+}
+
 @media (max-width: 767px) {
   /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
   .body-content {

@@ -1,37 +1,60 @@
 <header>
-  <nav class='navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3'>
+  <nav id class='navbar fixed-top navbar-expand-lg navbar-toggleable-lg navbar-inverse border-bottom box-shadow mb-3'>
     <div class="container">
-      <a class="navbar-brand" [routerLink]='["/"]'>IDEEM</a>
+
+      <a class="navbar-brand" [routerLink]='["/"]'>
+        <img src="assets/images/Isologo_w.png" height="40px" alt="">
+      </a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
         aria-label="Toggle navigation" [attr.aria-expanded]="isExpanded" (click)="toggle()">
-        <span class="navbar-toggler-icon"></span>
+        <fa-icon [icon]="['fas','bars']" class="text-white"></fa-icon>
       </button>
-      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" [ngClass]='{"show": isExpanded}'>
+      <div class="navbar-collapse collapse d-lg-inline-flex flex-lg-row-reverse" [ngClass]='{"show": isExpanded}'>
         <ul class="navbar-nav flex-grow">
-          <li class="nav-item" [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
-            <a class="nav-link text-dark" [routerLink]='["/"]'>Quienes Somos</a>
+          <li class="nav-item different dropdown ml-auto" [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+            <a class="nav-link  text-white" [routerLink]='["/"]'>QUIENES SOMOS</a>
 
           </li>
-          <li class="nav-item" [routerLinkActive]='["link-active"]'>
-            <a class="nav-link text-dark" [routerLink]='["/counter"]'>Programas de Formación Empresarial</a>
-            <span class="icon-toggle"><i class="fa fa-angle-down"></i></span>
-            <ul class="navbar-nav flex-grow">
-                <li class="nav-item" [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
-                    <a class="nav-link text-dark" [routerLink]='["/counter"]'>Programas de Formación Empresarial</a>
-                </li>
-              </ul>
+          <li class="nav-item different dropdown ml-auto" [routerLinkActive]='["link-active"]'
+            [routerLinkActiveOptions]='{ exact: true }'>
+            <a class="nav-link  dropdown-toogle text-right text-white" [routerLink]='["/"]' id="navbarDropdown"
+              role="button" aria-haspopup="true" aria-expanded="false">PROGRAMAS DE FORMACIÓN
+              EMPRESARIAL <fa-icon [icon]="['fas','angle-down']"></fa-icon></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item  text-right text-secondary" [routerLink]='["/counter"]'>Programas de Formación Empresarial</a>
+              <a class="dropdown-item  text-right text-secondary" [routerLink]='["/counter"]'>Programas de Formación Empresarial</a>
+              <a class="dropdown-item  text-right text-secondary" [routerLink]='["/counter"]'>Programas de Formación Empresarial</a>
+              <a class="dropdown-item  text-right text-secondary" [routerLink]='["/counter"]'>Programas de Formación Empresarial</a>
+              <a class="dropdown-item text-right text-secondary" [routerLink]='["/counter"]'>Programas de Formación Empresarial</a>
+              <a class="dropdown-item text-right text-secondary" [routerLink]='["/counter"]'>Programas de Formación Empresarial</a>
+            </div>
           </li>
-          <li class="nav-item" [routerLinkActive]='["link-active"]'>
-            <a class="nav-link text-dark" [routerLink]='["/fetch-data"]'>Emprendimiento e Innovación</a>
+          <li class="nav-item different dropdown ml-auto" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link  text-white" [routerLink]='["/fetch-data"]'>EMPRENDIMIENTO E INNOVACIÓN</a>
           </li>
-          <li class="nav-item" [routerLinkActive]='["link-active"]'>
-            <a class="nav-link text-dark" [routerLink]='["/fetch-data"]'>CO-WORKING</a>
+          <li class="nav-item different dropdown ml-auto" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link  text-white" [routerLink]='["/fetch-data"]'>CO-WORKING</a>
           </li>
-          <li class="nav-item" [routerLinkActive]='["link-active"]'>
-            <a class="nav-link text-dark" [routerLink]='["/fetch-data"]'>Contáctenos</a>
+          <li class="nav-item different dropdown ml-auto" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link text-white nav-contact" [routerLink]='["/fetch-data"]'>CONTÁCTENOS</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 </header>
+<script type="text/javascript">
+  $(document).ready(function() {
+      var navBar = $('#myNavbar');
+      $('.navbar-toggle').click(function(e) {
+          if (!navBar.is(':visible')) {
+              // #myNavbar is about to be shown, add extra class to parent <nav>
+              navBar.parents('nav').addClass('affix-visible-navbar');
+          } else {
+              // #myNavbar is about to be hidden, remove extra class from parent <nav>
+              navBar.parents('nav').removeClass('affix-visible-navbar');
+          }
+      });
+  });
+</script>
