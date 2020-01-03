@@ -1,0 +1,18 @@
+.footer-text{
+font-size: 0.8rem !important;
+color: #bbb;
+}
+
+#footer-separator{
+  background-color: #bbb;
+
+}
+
+.footer-color-text{
+  color: var(--text-light) !important;
+}
+.footer-color-text:hover ,#button-send:hover{
+  color: var(--primary-color) !important;
+}
+
+

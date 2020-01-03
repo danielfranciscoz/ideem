@@ -1,4 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
 :root{
-  --primary-color:#CAB880;
+  --primary-color:#CAB881;
+  --dark-color:rgb(151, 177, 206);
+  --second-blue-d:#006AB5;
+  --second-blue-l:#0092CD;
+
   }
+
+.bg-dark-color{
+  background-color: var(--dark-color);
+}
+.text-dark-color{
+  color: var(--dark-color);
+}
+
+.text-primario{
+  color: var(  --primary-color);
+}
+.bg-light {
+  background: #ccc; }
+
+.site-footer{
+  background: #333333;
+}
+
+.line-ideem:after {
+  content: '';
+    width: 40px;
+    height: 2px;
+    left: 0.9rem;
+    background: var(--primary-color);
+    position: absolute;
+    top: 45px;
+}
+
+.btn-outline-ideem{
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+  outline: none !important;
+}
+
+
+.btn-outline-ideem:hover{
+  background-color: var(--primary-color);
+  color:white;
+}
