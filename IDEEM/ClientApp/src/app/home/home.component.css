@@ -47,4 +47,15 @@ h5 a:hover{
 .eslogan{
   position: absolute;
 }
+
+.border-right{
+  border-right: 0 !important;
+}
+
+.card-agenda{
+  border: 1px solid #dee2e6!important;
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
+  padding-top: 0.5rem;
+}
 }
