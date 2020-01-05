@@ -7,6 +7,7 @@ video{
 
 }
 
+
 .overlay-desc {
   /* background: rgba(0,0,0,0); */
   position: absolute;
@@ -35,6 +36,18 @@ h5 a:hover{
   color: var(--primary-color) !important;
 }
 
+.img-empresa:hover{
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+.img-empresa{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: filter 0.4s;
+  -webkit-transition: -webkit-filter 1s;
+}
+
 @media (max-width: 540px), (max-width: 720px), (max-width: 960px) {
   .responsive-height{
     height: 100vh!important;
@@ -47,4 +60,7 @@ h5 a:hover{
 .eslogan{
   position: absolute;
 }
+
+
+
 }
