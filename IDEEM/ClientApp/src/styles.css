@@ -1,48 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
-:root{
-  --primary-color:#CAB881;
-  --dark-color:rgb(151, 177, 206);
-  --second-blue-d:#006AB5;
-  --second-blue-l:#0092CD;
+:root {
+  --primary-color: #cab881;
+  --primary-color-dark: #9b8d61;
+  --dark-color: rgb(151, 177, 206);
+  --second-blue-d: #006ab5;
+  --second-blue-l: #0092cd;
+}
 
-  }
-
-.bg-dark-color{
+.bg-dark-color {
   background-color: var(--dark-color);
 }
-.text-dark-color{
+.text-dark-color {
   color: var(--dark-color);
 }
 
-.text-primario{
-  color: var(  --primary-color);
+.text-primario {
+  color: var(--primary-color);
 }
-.bg-light {
-  background: #ccc; }
 
-.site-footer{
+.bg-primary-color {
+  color: var(--primary-color);
+}
+
+.bg-light {
+  background: #ccc;
+}
+
+.site-footer {
   background: #333333;
 }
 
 .line-ideem:after {
-  content: '';
-    width: 40px;
-    height: 2px;
-    left: 0.9rem;
-    background: var(--primary-color);
-    position: absolute;
-    top: 45px;
+  content: "";
+  width: 40px;
+  height: 2px;
+  left: 0.9rem;
+  background: var(--primary-color);
+  position: absolute;
+  top: 45px;
 }
 
-.btn-outline-ideem{
+@media (max-width: 540px), (max-width: 720px), (max-width: 960px) {
+  .line-ideem:after {
+    top: 38px;
+  }
+
+  h6.line-ideem:after {
+    top: 45px;
+  }
+}
+
+.btn-outline-ideem {
   border-color: var(--primary-color);
   color: var(--primary-color);
   background-color: transparent;
   outline: none !important;
 }
 
-
-.btn-outline-ideem:hover{
+.btn-ideem {
+  border-color: var(--primary-color);
+  color: white;
   background-color: var(--primary-color);
-  color:white;
+}
+
+.btn-ideem:hover {
+  background-color: var(--primary-color-dark) !important;
+  outline: none !important;
+  border-color: transparent;
+}
+
+.btn-outline-ideem:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.md-border {
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }

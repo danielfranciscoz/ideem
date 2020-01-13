@@ -3,6 +3,13 @@ font-size: 0.8rem !important;
 color: #bbb;
 }
 
+footer{
+background-image: linear-gradient( rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.85)) , url('/assets/images/IDEEM_neg.png') ;
+background-repeat: no-repeat;
+background-position: right;
+background-size:contain;
+}
+
 #footer-separator{
   background-color: #bbb;
 

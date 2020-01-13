@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import {CursoComponent} from './curso/curso.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
@@ -22,6 +23,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
     NavMenuComponent,
     FooterComponent,
     HomeComponent,
+    CursoComponent,
     CounterComponent,
     FetchDataComponent
   ],
@@ -30,6 +32,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
+     {path: 'curso/:curso', component: CursoComponent},
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },

@@ -1,0 +1,27 @@
+.outer-div
+{
+     height: 500px;
+     overflow: hidden;
+}
+img
+{
+     width: 100%;
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+.section-img {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-header-text{
+  background-color: rgba(97, 97, 97, 0.5);
+}
+
+.bg-material-card{
+  background: #fafafa;
+}
